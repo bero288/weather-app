@@ -1,0 +1,153 @@
+/*start glopal*/
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(rgb(47, 150, 143), rgb(48, 62, 143));
+  font-family: "Poppins", Tahoma, Arial;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+/*end glopal*/
+/*start my framework*/
+.capitalize {
+  text-transform: capitalize;
+}
+/*end my framework*/
+/*start my styling*/
+.loader-container {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+}
+.loader-container .loader {
+  width: 60px;
+  height: 60px;
+  border: 5px solid;
+  color: #3498db;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: loader 1.2s ease infinite;
+  transition: opacity 2s ease-in;
+}
+@keyframes loader {
+  50% {
+    color: #c0392b;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.vanish {
+  opacity: 0;
+  pointer-events: none;
+}
+.container {
+  width: 300px;
+  border-radius: 10px;
+  background-color: #fff;
+  text-align: center;
+}
+.app-title {
+  padding: 10px;
+  color: #293251;
+}
+.notification {
+  color: #721c24;
+  background-color: #f8d7da;
+  padding: 15px;
+  display: none;
+}
+.weather-container {
+  width: 100%;
+  background-color: #f4f9ff;
+  padding: 15px 0px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.temprature-value p {
+  font-size: 2.5rem;
+  color: #293251;
+}
+.temprature-value p:hover {
+  cursor: pointer;
+}
+.temprature-value p .degree {
+  margin-left: 3px;
+  font-size: 1.7rem;
+  color: #293251;
+}
+.temprature-description {
+  padding: 5px 0px;
+  font-size: 1.2rem;
+  color: #293251;
+}
+.location {
+  color: #293251;
+  padding: 5px;
+  font-size: 0.9rem;
+}
+.wind-speed {
+  padding-left: 5px;
+  color: #293251;
+}
+.speed {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px 0px;
+}
+.humidity {
+  display: none;
+  color: #293251;
+  padding: 5px;
+}
+.date {
+  color: #293251;
+  padding: 5px;
+  font-size: 0.9rem;
+}
+.show {
+  display: block;
+}
+.btn-container {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  padding: 7px 5px;
+  width: 39%;
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+  color: #3498db;
+  background-color: transparent;
+  border: 1px solid #3498db;
+  transition: all 0.3s ease-in;
+}
+.btn:hover {
+  color: #fff;
+  background-color: #3498db;
+}
+.btn:focus {
+  transform: scale(0.96);
+  outline: none;
+}
+@media (max-width: 300px) {
+  .container {
+    width: 90%;
+  }
+}
+/*end my styling*/

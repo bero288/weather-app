@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>weather app</title>
+  </head>
+  <body>
+    <div class="loader-container">
+      <div class="loader"></div>
+    </div>
+    <div class="container capitalize">
+      <div class="app-title">
+        <h2>weather</h2>
+        <div class="date">
+          <p>friday 4:00</p>
+        </div>
+      </div>
+      <div class="notification"></div>
+      <div class="weather-container">
+        <div class="weather-icon">
+          <img src="icons/unknown.png" alt="unknown" />
+        </div>
+        <div class="temprature-value">
+          <p>- °<span class="degree">c</span></p>
+        </div>
+        <div class="temprature-description">
+          <p>-</p>
+        </div>
+        <div class="location">
+          <p>-</p>
+        </div>
+        <div class="wind-speed">
+          <p>wind speed : <span class="speed">-</span>km/h</p>
+        </div>
+        <div class="humidity">
+          <p>humidity: <span>5%</span></p>
+        </div>
+      </div>
+      <div class="btn-container">
+        <button class="btn">read more</button>
+      </div>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
